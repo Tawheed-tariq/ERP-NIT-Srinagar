@@ -4,7 +4,6 @@ export default function MainSection({ erpMembers, quickLinks }) {
   return (
     <main className="flex-grow">
       <div className="container mx-auto px-4 py-8 sm:py-12 lg:py-16">
-        {/* Stylish section title */}
         <div className="flex flex-col items-center justify-center mb-8 sm:mb-12 lg:mb-16 text-center">
           <div className="bg-blue-600 text-white p-3 sm:p-4 rounded-full mb-3 sm:mb-4 shadow-lg">
             <Award size={32} className="sm:hidden" />
@@ -16,10 +15,8 @@ export default function MainSection({ erpMembers, quickLinks }) {
           </h2>
         </div>
         
-        {/* Main grid layout - changes to 1 column on mobile, 3 columns on medium+ */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {/* ERP Members Column - Full width on mobile, 2/3 on medium+ */}
-          <div className="md:col-span-2">
+          <div className="order-2 md:order-1 md:col-span-2">
             <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8">
               {erpMembers.map((member, index) => (
                 <div key={index} className="w-full sm:w-auto transform transition duration-300 hover:scale-105">
@@ -36,8 +33,7 @@ export default function MainSection({ erpMembers, quickLinks }) {
             </div>
           </div>
           
-          {/* Quick Links Column - Full width on mobile, 1/3 on medium+ */}
-          <div className="mt-8 md:mt-0">
+          <div className="order-1 md:order-2">
             <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-xl sm:rounded-2xl shadow-lg sm:shadow-xl p-4 sm:p-6 lg:p-8 border border-blue-200">
               <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-gray-800 border-b border-blue-300 pb-3 sm:pb-4 flex items-center">
                 <ExternalLink size={20} className="sm:hidden mr-2 text-blue-600" />

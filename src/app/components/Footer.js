@@ -83,15 +83,14 @@ export default function Footer() {
                   <Coffee size={18} className="mr-2 text-blue-300" />
                   Campus Hours
                 </h5>
-                <p className="text-blue-100">Monday - Friday: 8am - 9pm</p>
-                <p className="text-blue-100">Saturday: 9am - 5pm</p>
-                <p className="text-blue-100">Sunday: Closed</p>
+                <p className="text-blue-100">Monday - Friday: 10:00 am - 5:00 pm</p>
+                <p className="text-blue-100">Saturday - Sunday: Closed</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-blue-800 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
-            <p className="text-center">© 2025 ERP NIT. All rights reserved.</p>
+            <p className="text-center">© 2025 ERP NIT Srinagar. All rights reserved, designed by <a href='https://tavaheed.netlify.app/' className='hover:underline hover:cursor-pointer'>Tavaheed Tariq</a></p>
           </div>
         </div>
       </footer>

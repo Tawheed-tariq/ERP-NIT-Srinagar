@@ -64,7 +64,7 @@ const ProfileCard = ({ name, position, email, website, contact, image, location,
             </div>
           )}
           
-          {contact && (
+          {/* {contact && (
             <div className="flex items-center group">
               <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
                 <Phone size={16} className="text-blue-600" />
@@ -73,7 +73,7 @@ const ProfileCard = ({ name, position, email, website, contact, image, location,
                 {contact}
               </a>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

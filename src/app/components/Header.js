@@ -30,7 +30,7 @@ export default function Header() {
                 {/* Simple, larger Samarth text */}
                 <div className="mt-4 flex justify-center">
                     <p className="text-xl md:text-2xl lg:text-3xl font-semibold italic tracking-wide text-center">
-                        Samarth Enterprise Resource Planning
+                        Samarth Enterprise Resource Planning Cell
                     </p>
                 </div>
             </div>

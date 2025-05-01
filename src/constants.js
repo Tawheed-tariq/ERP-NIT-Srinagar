@@ -19,22 +19,21 @@ export const erpMembers = [
       name: "Miss Insha Shafi",
       position: "Technical Asistant",
       email: "insha_ta@nitsri.ac.in",
-      website: "",
-      image: "person.jpeg"
+      image: "noimage.png"
     },
     {
       name: "Mr. Roaf Ahmad",
       position: "Office Asistant",
       email: "teamerp@nitsri.ac.in",
       website: "",
-      image: "person.jpeg"
+      image: "roaf.jpg"
     },
     {
       name: "Miss Maurifat",
       position: "Office Asistant",
       email: "officeerp@nitsri.ac.in",
       website: "",
-      image: "person.jpeg"
+      image: "noimage.png"
     }
   ];
 

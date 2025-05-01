@@ -26,6 +26,13 @@ export default function Header() {
                         </h1>
                     </div>
                 </div>
+                
+                {/* Simple, larger Samarth text */}
+                <div className="mt-4 flex justify-center">
+                    <p className="text-xl md:text-2xl lg:text-3xl font-semibold italic tracking-wide text-center">
+                        Samarth Enterprise Resource Planning
+                    </p>
+                </div>
             </div>
         </header>
     )

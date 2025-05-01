@@ -1,4 +1,4 @@
-import { Award, ExternalLink, ChevronRight } from 'lucide-react';
+import { Award, ExternalLink, ChevronRight, Mail } from 'lucide-react';
 import ProfileCard from './ProfileCard';
 export default function MainSection({ erpMembers, quickLinks }) {
   return (
@@ -10,7 +10,7 @@ export default function MainSection({ erpMembers, quickLinks }) {
             <Award size={40} className="hidden sm:block" />
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 relative">
-            Our ERP Management Team
+            Samarth ERP Team
             <div className="h-1 w-16 sm:w-20 lg:w-24 bg-blue-600 mx-auto mt-3 sm:mt-4"></div>
           </h2>
         </div>
@@ -40,22 +40,41 @@ export default function MainSection({ erpMembers, quickLinks }) {
                 <ExternalLink size={24} className="hidden sm:block mr-3 text-blue-600" />
                 Quick Links
               </h3>
-            <ul className="space-y-2 sm:space-y-3">
+              <ul className="space-y-2 sm:space-y-3">
                 {quickLinks.map((link, index) => (
-                    <li key={index}>
-                        <a 
-                            href={link.url} 
-                            className="flex items-center text-blue-700 hover:text-blue-900 hover:bg-white p-2 sm:p-3 rounded-lg sm:rounded-xl transition-all duration-300 shadow-sm sm:shadow-md hover:shadow-lg group"
-                        >
-                            <div className="bg-blue-100 p-1 rounded-lg mr-2 text-blue-600 group-hover:bg-blue-200 transition-colors">
-                                {link.icon}
-                            </div>
-                            <span className="font-medium text-sm sm:text-base">{link.title}</span>
-                            <ChevronRight size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </a>
-                    </li>
+                  <li key={index}>
+                    <a 
+                      href={link.url} 
+                      className="flex items-center text-blue-700 hover:text-blue-900 hover:bg-white p-2 sm:p-3 rounded-lg sm:rounded-xl transition-all duration-300 shadow-sm sm:shadow-md hover:shadow-lg group"
+                    >
+                      <div className="bg-blue-100 p-1 rounded-lg mr-2 text-blue-600 group-hover:bg-blue-200 transition-colors">
+                        {link.icon}
+                      </div>
+                      <span className="font-medium text-sm sm:text-base">{link.title}</span>
+                      <ChevronRight size={16} className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  </li>
                 ))}
-            </ul>
+              </ul>
+              
+              {/* Contact Section */}
+              <h3 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-8 mb-4 sm:mb-6 text-gray-800 border-b border-blue-300 pb-3 sm:pb-4 flex items-center">
+                <Mail size={20} className="sm:hidden mr-2 text-blue-600" />
+                <Mail size={24} className="hidden sm:block mr-3 text-blue-600" />
+                Contact
+              </h3>
+              <div className="bg-white rounded-lg p-3 sm:p-4 shadow-md hover:shadow-lg transition-shadow">
+                <a 
+                  href="mailto:teamerp@nitsri.ac.in" 
+                  className="flex items-center text-blue-700 hover:text-blue-900 group"
+                >
+                  <div className="bg-blue-100 p-1 sm:p-2 rounded-lg mr-2 text-blue-600 group-hover:bg-blue-200 transition-colors">
+                    <Mail size={16} className="sm:hidden" />
+                    <Mail size={18} className="hidden sm:block" />
+                  </div>
+                  <span className="font-medium text-sm sm:text-base break-all">teamerp@nitsri.ac.in</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
